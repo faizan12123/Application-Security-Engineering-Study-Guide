@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>3. Injection</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>3. Injection</h1><br/><p>• Injection:</p><p>   ◇ User-supplied data is not validated, filtered, or sanitized by the application.</p><p>   ◇ Dynamic queries or non-parameterized calls without context-aware escaping are used directly in the interpreter.</p><p>   ◇ Hostile data is used within object-relational mapping (ORM) search parameters to extract additional, sensitive records.</p><p>   ◇ Hostile data is directly used or concatenated. The SQL or command contains the structure and malicious data in dynamic queries, commands, or stored procedures.</p><p></p><p>• Common Vulnerabilities:</p><p>   ◇ SQL</p><p>   ◇ NoSQL</p><p>   ◇ OS Command</p><p>   ◇ ORM</p><p>   ◇ LDAP</p><p>   ◇ Expression Language</p><p>   ◇ Object Graph Navigation Library (OGNL) injection</p><p></p><p>• Mitigate:</p><p>   ◇ The preferred option is to use a safe API, which avoids using the interpreter entirely, provides a parameterized interface, or migrates to Object Relational Mapping Tools (ORMs).</p><p>      ▪ Note: Even when parameterized, stored procedures can still introduce SQL injection if PL/SQL or T-SQL concatenates queries and data or executes hostile data with EXECUTE IMMEDIATE or exec().</p><p>   ◇ Use positive server-side input validation. This is not a complete defense as many applications require special characters, such as text areas or APIs for mobile applications</p><p>   ◇ For any residual dynamic queries, escape special characters using the specific escape syntax for that interpreter.</p><p>      ▪ Note: SQL structures such as table names, column names, and so on cannot be escaped, and thus user-supplied structure names are dangerous. This is a common issue in report-writing software</p><p>   ◇ Use LIMIT and other SQL controls within queries to prevent mass disclosure of records in case of SQL injection.</p></div>
+</body>
+</html>
