@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Mitigation</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>Mitigation</h1><br/><p>There are several secure coding guidelines that can help prevent deserialization vulnerabilities in Java-based applications. Here are some best practices to follow:</p><p><ol><li>Avoid deserialization whenever possible: If you don&#39;t need to transfer objects between systems, it&#39;s best to avoid serialization and deserialization altogether.</li></ol></p><p><ol><li>Validate input data: Before passing any input data to the readObject() method of an ObjectInputStream object, make sure that it is properly validated and sanitized. Use whitelisting instead of blacklisting when validating input data.</li></ol></p><p><ol><li>Use a security manager: A security manager can be used to restrict the permissions of the code being executed during deserialization.</li></ol></p><p><ol><li>Implement access controls: Implement proper access controls and authentication mechanisms to prevent unauthorized access to sensitive resources.</li></ol></p><p><ol><li>Monitor application logs: Monitor application logs for suspicious activity or anomalies that could indicate a deserialization attack.</li></ol></p><p><ol><li>Use safe serialization libraries: Use safe serialization libraries such as Google&#39;s Protocol Buffers or Apache Avro, which have built-in protections against deserialization attacks.</li></ol></p><p><ol><li>Disable unnecessary classes for deserialization: Disable unnecessary classes for deserialization by using the &quot;serialFilter&quot; feature introduced in Java 8u121 or later versions.</li></ol></p><p><ol><li>Keep your Java runtime environment up-to-date: Keep your Java runtime environment up-to-date with the latest security patches and updates to ensure that known vulnerabilities are patched.</li></ol></p></div>
+</body>
+</html>

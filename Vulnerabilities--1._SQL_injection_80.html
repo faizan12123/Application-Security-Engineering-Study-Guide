@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>1. SQL injection</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>1. SQL injection</h1><br/><p><ul><li>The different types of SQL Injections<ul><li><a href="https://portswigger.net/web-security/sql-injection#retrieving-hidden-data">Retrieving hidden data</a>, where you can modify an SQL query to return additional results.</li><li><a href="https://portswigger.net/web-security/sql-injection#subverting-application-logic">Subverting application logic</a>, where you can change a query to interfere with the application&#39;s logic.</li><li><a href="https://portswigger.net/web-security/sql-injection/union-attacks">UNION attacks</a>, where you can retrieve data from different database tables.</li><li><a href="https://portswigger.net/web-security/sql-injection/examining-the-database">Examining the database</a>, where you can extract information about the version and structure of the database.</li><li><a href="https://portswigger.net/web-security/sql-injection/blind">Blind SQL injection</a>, where the results of a query you control are not returned in the application&#39;s responses.<ul><li>Blind SQL injection is a type of attack that asks the database true or false questions and determines the answer based on the applications response</li><li>Effectively the attacker uses SQL queries to determine what error responses are returned for valid SQL, and which responses are returned for invalid SQL</li><li>Blind SQL injections can also use timings instead of error messages, e.g. if invalid SQL takes 2 seconds to respond, but valid SQL returns in 0.5 seconds, the attacker can use this information</li></ul></li></ul></li></ul></p><p><ul><li></li></ul><img src="images/80-1.png" alt="images/80-1.png" /><ul><li>Using string concatenation to generate a SQL statement is very common in legacy applications where developers were not considering security. The issue is this coding technique does not tell the parser which part of the statement is code and which part is data</p><p></li></ul></p></div>
+</body>
+</html>

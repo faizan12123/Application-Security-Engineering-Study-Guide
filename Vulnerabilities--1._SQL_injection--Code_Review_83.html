@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Code Review</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>Code Review</h1><br/><p><ul><li>Always validate user input by testing type, length, format, and range.</li><li>Test the size and data type of input and enforce appropriate limits.</li><li>Test the content of string variables and accept only expected values. Reject entries that contain binary data, escape</li></ul></p><p>sequences, and comment characters.<ul><li>When you are working with XML documents, validate all data against its schema as it is entered.</li><li>Never build SQL statements directly from user input.</li><li>Use stored procedures to validate user input, when not using stored procedures use SQL API provided by platform. i.e. Parameterized Statements.</li><li>Implement multiple layers of validation.</li><li>Never concatenate user input that is not validated. String concatenation is the primary point of entry for script injection.</li><li>You should review all code that calls EXECUTE, EXEC, any SQL calls that can call outside resources or command line.</li></ul></p></div>
+</body>
+</html>

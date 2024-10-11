@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Mitigation</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>Mitigation</h1><br/><p><ul><li>To avoid problems caused by unhandled characters or unsupported character encodings, the validation routine should use a single and proper character set, such as UTF-8, to all sources of input<ul><li>Therefore, as soon as the data reaches the trustedsystem where Input Validation is performed, and before the validation stage, the data should be encoded</li></ul></li></ul></p><p><ul><li>For web applications, HTTP request and response headers should be subject of validation (e.g. headers should only contain ASCII characters<ul><li> Remember that HTTP headers are also untrusted data sources (e.g. cookies)</li></ul></li></ul></p><p><ul><li>Validate data from redirects as &quot;an attacker may submit malicious content directly to the target of there direct, thus circumventing application logic and any validation performed before the redirect&quot;.</li></ul></p></div>
+</body>
+</html>

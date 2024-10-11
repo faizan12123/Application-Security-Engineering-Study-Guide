@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Mitigation</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>Mitigation</h1><br/><p>Buffer Overflow vulnerabilities occur when an application writes more data to a buffer than it can hold. This can happen due to various reasons such as:</p><p><ol><li>Improper input validation: If an application does not properly validate user input, it may accept input that is larger than the buffer size allocated for storing it.</li></ol></p><p><ol><li>Lack of bounds checking: If an application does not check the bounds of a buffer before writing data to it, it may write beyond the end of the buffer and overwrite adjacent memory locations.</li></ol></p><p><ol><li>Use of unsafe programming languages: Programming languages such as C and C++ do not have built-in protections against buffer overflows, making them more susceptible to this type of vulnerability.</li></ol></p><p><ol><li>Use of outdated or vulnerable libraries: If an application uses outdated or vulnerable libraries that are susceptible to buffer overflows, attackers can exploit these vulnerabilities to gain unauthorized access or execute arbitrary code.</li></ol></p><p><ol><li>Memory allocation errors: If an application allocates insufficient memory for a buffer, it may overflow when data is written to it.</li></ol></p><p></p><p>To prevent Buffer Overflow vulnerabilities, developers should ensure that they properly validate and sanitize any input received from untrusted sources before processing it. They should also use programming languages and libraries that have built-in protections against buffer overflows, such as Java and Python. Additionally, developers should perform regular security audits and vulnerability scans to identify potential issues in their applications.</p></div>
+</body>
+</html>

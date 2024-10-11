@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Mitigation</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>Mitigation</h1><br/><p><ol><li>Synchronizer Tokens: This technique involves generating a unique token for each user session and including it in each request that modifies state on the server. The server then verifies that the token is valid before processing the request. This helps to prevent attackers from forging requests because they would need to know the value of the token, which is kept secret by the server.</li></ol></p><p><ol><li>Same-Site Cookies: Same-site cookies restricts cookies to only be sent in requests originating from the same site as the cookie was set on. This helps to prevent CSRF attacks because an attacker cannot forge a request that includes a cookie from another site.</li></ol></p><p><ol><li>Input Validation: Input validation is important to ensure that any data received by your application is safe and free from malicious code or characters that could be used in an attack.</li></ol></p><p><ol><li>Output Encoding: Output encoding ensures that any data displayed by your application is properly encoded so that it cannot be interpreted as code by a browser or other client-side application.</li></ol></p></div>
+</body>
+</html>

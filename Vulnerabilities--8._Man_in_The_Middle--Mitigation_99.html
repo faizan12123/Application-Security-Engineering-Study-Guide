@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Mitigation</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>Mitigation</h1><br/><p><ol><li>Use secure communication protocols: To prevent MitM attacks, developers should ensure that they use secure communication protocols such as HTTPS to encrypt data being transmitted over the internet. This can help protect against eavesdropping and tampering with data in transit.</li></ol></p><p><ol><li>Implement certificate pinning: Certificate pinning is a technique used to prevent attackers from intercepting and modifying traffic by ensuring that only trusted certificates are accepted by the client. This can help prevent attackers from using fake or forged certificates to impersonate legitimate websites. While SSL/TLS certificates provide a way to encrypt data being transmitted over the internet, they do not guarantee that the server being connected to is the legitimate one. Certificate pinning, on the other hand, is a technique used to ensure that only trusted certificates are accepted by the client. This can help prevent attackers from using fake or forged certificates to impersonate legitimate websites and intercept traffic. In certificate pinning, the client (such as a web browser) is configured to trust only specific public key(s) or certificate(s) associated with a particular domain name. When connecting to the website, the client checks that the server&#39;s SSL/TLS certificate matches one of these trusted keys/certificates. If it does not match, then the connection is terminated.</li></ol></p><p><ol><li>Use HSTS (HTTP Strict Transport Security): HSTS is a security feature that instructs web browsers to only connect to a website using HTTPS, even if the user types in an HTTP URL. This can help prevent attackers from downgrading the connection to HTTP and intercepting traffic.</li></ol></p><p><ol><li>Educate users on safe browsing habits: Users should be educated on the risks of using unsecured networks and encouraged to use VPNs or other secure methods for accessing sensitive information.</li></ol></p><p><ol><li>Keep software up-to-date: Developers should ensure that they keep their software up-to-date with the latest security patches and updates to prevent known vulnerabilities from being exploited by attackers.</li></ol></p></div>
+</body>
+</html>
